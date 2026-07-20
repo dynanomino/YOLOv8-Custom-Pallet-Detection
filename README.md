@@ -15,7 +15,7 @@ looks like after processing:
 
 Training the model to achieve the goal of identifying the pallet on the conveyor would
 require supervised datasets. The first step was to use a webcam attached to a tripod
-for our setup. This is done to ensure the stability and consistency of the images. The image
+for the setup. This is done to ensure the stability and consistency of the images. The image
 collection occurs at four different distances as shown in the figure below. These distances are
 categorized as Near Near range, Near Far range, Far Near range, and Far Far range.
 
@@ -60,3 +60,21 @@ including one visible side of the pallet. Additionally, we included slightly blu
 were taken. As mentioned before, the model will be used in a real-time camera feed. This is done
 to increase confidence in identifying the pallet during motion. As a result, 469 images were
 labelled manually to create this supervised learning dataset.
+
+<h2>Solution Assessment</h2>
+
+One benefit to using YOLO to train and test the model is that it provides several graphs
+that represent how the model improves. The following graphs show how the mean average
+precision (mAP), recall, precision and cost function loss vary with the epoch count.
+
+<img width="1308" height="637" alt="image" src="https://github.com/user-attachments/assets/a380b7f2-dbf5-4ad0-922f-63ef6eb3dc43" />
+
+As expected, most of these metrics significantly improved in the first few iterations,
+before leveling out and improving at a slower rate. Based on these graphs, the best version was
+found to occur at epoch 74 so training was ended then. This cutoff prevents overfitting, as well as
+avoids diminishing results from unnecessarily long training. YOLO also provided useful graphs
+for determining the ideal confidence level.
+
+<img width="687" height="640" alt="image" src="https://github.com/user-attachments/assets/ae707ef0-4ecf-4491-bb44-7c8ebbc34aed" /> <img width="687" height="644" alt="image" src="https://github.com/user-attachments/assets/4dd45716-96bf-49ac-80df-9f05690498c0" />
+
+
