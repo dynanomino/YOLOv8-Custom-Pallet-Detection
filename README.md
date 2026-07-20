@@ -35,5 +35,28 @@ The steps and angle change process is shown below:
 
 <img width="1866" height="970" alt="image" src="https://github.com/user-attachments/assets/dc443574-d536-47d2-b445-8e0c95f71d5a" />
 
-**Image Labelling**
+<h2>Image Labelling</h2>
 
+In computer vision, labelling is an essential task in anchoring between raw visual data
+and meaningful understanding. Raw images that were captured in the previous section only tell
+so much about the features within it. To train the model, we need the images to have
+corresponding data to show the position of the pallet on the images. Hence, we need to label the
+data to its corresponding output. This creates supervised learning data for the model to train on.
+
+For labelling, my team used an open-source tool called LabelImg annotation tool to
+identify the pallet in the images. The way it works is as simple as annotating bounding boxes
+around the object of interest, in our case the pallet, within the images and assigning its
+corresponding label. The figure below shows a sample process of labelling a pallet on the image.
+
+<img width="2077" height="1131" alt="image" src="https://github.com/user-attachments/assets/348ab5a4-3ce5-4b61-9460-d014bd0c2c22" />
+
+As seen from the figure above, there may be some obscurants in the way of the pallet. In
+our image collection, we identified three different scenarios; when the pallet is fully visible,
+when the pallet is partly visible on one side, and when the pallet is partly visible on both sides.
+For the first two cases, we will only annotate the visible pallet. Whereas for the last case, we
+included the obscurant in the annotation. This is done since including as much of the pallet on
+the annotation as possible would result in a higher confidence in identification, compared to only
+including one visible side of the pallet. Additionally, we included slightly blurred images that
+were taken. As mentioned before, the model will be used in a real-time camera feed. This is done
+to increase confidence in identifying the pallet during motion. As a result, 469 images were
+labelled manually to create this supervised learning dataset.
