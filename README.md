@@ -88,3 +88,22 @@ can be averaged and shown together using the F1 curve.
 
 <img width="978" height="643" alt="image" src="https://github.com/user-attachments/assets/6017f2de-6e01-4239-b205-4e02d4067c17" />
 
+The F1 score is the harmonic mean of the precision and recall scores, and it represents the
+reliability of the model at every confidence level. For this model, the F1 score is highest at
+79.9% confidence.
+
+In the resultant inference video (Validation Video.mov is just the unlabelled sample), we observed 
+that the confidence scores were very high when there was an unobstructed view of the pallet, with 
+scores as high as 0.95. As the pallet moved into an obstructed view, the confidence scores decreased 
+to a minimum of 0.82, which is expected but showcases the potential robustness of the model to 
+accurately identify the features of the pallet in unideal conditions. The pallet was also able to 
+be classified fairly quickly, with a local NVIDIA RTX 3070Ti Laptop GPU detections occurring 
+within 220ms. This speed may be sufficient for production parts that move fairly slowly or have 
+large inertia but may be ineffective for very rapid production cycles. For such scenarios, a more 
+capable GPU (preferably an enterprise GPU such as the NVIDIA A100) may be required for faster 
+image processing and I/O operations with memory.
+
+As stated above, feel free to perform local inference on the supplied sample video "Validation Video.mov"
+and watch the inference results yourself!
+
+Thank you for your time!
