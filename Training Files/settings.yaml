@@ -1,0 +1,16 @@
+settings_version: 0.0.4
+datasets_dir: /content/drive/MyDrive/Pallete_Video_Test/Training Files
+weights_dir: weights
+runs_dir: runs
+uuid: 44e6618bee99d4334a852163ac4680be631b9e3ef09f625876e19a613cfe8f1c
+sync: true
+api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true

@@ -1,0 +1,11 @@
+path: ./dataset
+
+train: train
+
+val: val
+
+test: test
+
+nc: 1
+
+names: ['pallete']
