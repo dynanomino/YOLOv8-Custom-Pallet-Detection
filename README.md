@@ -77,4 +77,14 @@ for determining the ideal confidence level.
 
 <img width="687" height="640" alt="image" src="https://github.com/user-attachments/assets/ae707ef0-4ecf-4491-bb44-7c8ebbc34aed" /> <img width="687" height="644" alt="image" src="https://github.com/user-attachments/assets/4dd45716-96bf-49ac-80df-9f05690498c0" />
 
+The precision is the model’s ability to make a correct positive prediction. This is defined
+by the number of true positives divided by the total number of positives (true and false). As the
+confidence score increases, the precision understandably increases as well. Recall represents how
+many of the total positive instances the model can predict, defined as the number of positive
+predictions divided by the number of positive instances. As the confidence score increases, the
+recall decreases due to the model not being able to make as many confident predictions.
+Precision and recall are both metrics that should ideally be as high as possible. Fortunately, they
+can be averaged and shown together using the F1 curve.
+
+<img width="978" height="643" alt="image" src="https://github.com/user-attachments/assets/6017f2de-6e01-4239-b205-4e02d4067c17" />
 
