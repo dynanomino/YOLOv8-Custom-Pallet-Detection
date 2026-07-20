@@ -11,7 +11,7 @@ looks like after processing:
 
 <img width="1879" height="1246" alt="image" src="https://github.com/user-attachments/assets/5fc40525-c971-49ed-b192-9acb11f20839" />
 
-**Data Acquisition**
+<h2>**Data Acquisition**</h2>
 
 Training the model to achieve the goal of identifying the pallet on the conveyor would
 require supervised datasets. The first step was to use a webcam attached to a tripod
