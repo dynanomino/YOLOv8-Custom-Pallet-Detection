@@ -1,4 +1,4 @@
-Hello, welcome to the YOLOv8 Custom Pallet Detection model repo!.
+Hello, welcome to the YOLOv8 Custom Pallet Detection model repo!
 
 This repo contains all code necessary for custom pallet model training and inference. Please note that training was done on the Google Colab platform, 
 and thus the model training python code located at "Training Files\dataset\pallete_model.py" uses the file path for recognised by Google Colab.
