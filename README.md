@@ -25,7 +25,7 @@ The steps for taking the images are listed below:
 1. Place the pallet on the conveyor in one position
 2. Take pictures of the pallet on the conveyor, varying the angle at which the image is taken
 3. Split these images such that 80% of images are used for training, and 20% are used for
-testing
+testing, in an even spread across angles
 4. Repeat steps 1 - 3 for all distances
 5. Move the position of the pallet to the next position and repeat steps 1 - 4
 
