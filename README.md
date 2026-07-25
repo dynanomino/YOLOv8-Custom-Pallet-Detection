@@ -7,7 +7,7 @@ If wishing to perform local model training, please adjust the file path in palle
 in the script.
 
 Feel free to run inference on the sample "Validation Video.mov" video using the Pallete_Video_Run.py script! Here's a screenshot of what inference
-looks like after processing:
+looks like after processing (the model can also be tested for classifying in a different manufacturing machine):
 
 <img width="1879" height="1246" alt="image" src="https://github.com/user-attachments/assets/5fc40525-c971-49ed-b192-9acb11f20839" />
 
