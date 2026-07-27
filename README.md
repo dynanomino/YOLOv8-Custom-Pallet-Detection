@@ -1,6 +1,6 @@
 Hello, welcome to the YOLOv8 Custom Pallet Detection model repo!
 
-**Credits:** 
+**Credits:** <\n> 
 **Danny Wanjohi (@dynanomino)** - Research, image dataset collection plan, image labelling, model training & inference
 **Arie Fawwaz** - Research, Image collection, image labeling
 **Isaac Eva** - Research, Image collection, image labeling
