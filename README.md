@@ -1,5 +1,7 @@
 Hello, welcome to the YOLOv8 Custom Pallet Detection model repo!
 
+<img width="1879" height="1246" alt="image" src="https://github.com/user-attachments/assets/5fc40525-c971-49ed-b192-9acb11f20839" />
+
 **Credits:**
 
 **Danny Wanjohi (@dynanomino)** - Research, image dataset collection plan, image labelling, model training & inference
@@ -16,8 +18,6 @@ in the script.
 
 Feel free to run inference on the sample "Validation Video.mov" video using the Pallete_Video_Run.py script! Here's a screenshot of what inference
 looks like after processing (the model can also be tested for classifying in a different manufacturing machine, but for the same pallet object):
-
-<img width="1879" height="1246" alt="image" src="https://github.com/user-attachments/assets/5fc40525-c971-49ed-b192-9acb11f20839" />
 
 <h2>Data Acquisition</h2>
 
